@@ -24,8 +24,7 @@ public class ECSCxfBinding extends DefaultCxfBinding {
      * @param camelExchange the camel exchange
      */
     @Override
-    public void populateExchangeFromCxfRequest(Exchange cxfExchange,
-            org.apache.camel.Exchange camelExchange) {
+    public void populateExchangeFromCxfRequest(Exchange cxfExchange, org.apache.camel.Exchange camelExchange) {
         Message cxfMessage = cxfExchange.getInMessage();
         cxfMessage.put(SecurityContext.class, null);
         super.populateExchangeFromCxfRequest(cxfExchange, camelExchange);

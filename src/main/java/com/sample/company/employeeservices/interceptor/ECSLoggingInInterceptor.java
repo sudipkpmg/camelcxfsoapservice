@@ -11,10 +11,6 @@ import org.springframework.stereotype.Service;
 /**
  * The Class ECSLoggingInInterceptor.
  */
-/**
- * @author Infosys Ltd
- * 
- */
 @Service("ecsLoggingInInterceptor")
 public class ECSLoggingInInterceptor extends LoggingInInterceptor {
 

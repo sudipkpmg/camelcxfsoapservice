@@ -11,10 +11,6 @@ import org.springframework.stereotype.Service;
 /**
  * The Class ECSLoggingOutInterceptor.
  */
-/**
- * @author Infosys Ltd
- * 
- */
 @Service("ecsLoggingOutInterceptor")
 public class ECSLoggingOutInterceptor extends LoggingOutInterceptor {
 
