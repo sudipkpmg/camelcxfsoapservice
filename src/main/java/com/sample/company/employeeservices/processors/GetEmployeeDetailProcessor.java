@@ -13,9 +13,6 @@ import com.sample.company.employeeservice.getemployeedetailservice.getemployeede
 import com.sample.company.employeeservice.getemployeedetailservice.getemployeedetailresponse.ObjectFactory;
 import com.sample.company.employeeservice.getemployeedetailservice.getemployeedetailresponse.Body;
 
-/**
- * The Class GetEmployeeDetailProcessor.
- */
 @Service("getEmployeeDetailProcessor")
 public class GetEmployeeDetailProcessor implements Processor {
 

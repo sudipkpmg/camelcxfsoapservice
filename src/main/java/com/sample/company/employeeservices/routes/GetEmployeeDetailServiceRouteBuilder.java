@@ -1,16 +1,13 @@
 package com.sample.company.employeeservices.routes;
 
+import org.apache.camel.builder.RouteBuilder;
 import org.springframework.stereotype.Service;
 
-/**
- * The Class GetEmployeeDetailServiceRouteBuilder.
- */
 @Service
-public class GetEmployeeDetailServiceRouteBuilder extends EmployeeServicesGenericRouteBuilder {
+public class GetEmployeeDetailServiceRouteBuilder extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {
-        super.configure();
         configureGetEmployeeDetailPaymentRoute();
     }
 
