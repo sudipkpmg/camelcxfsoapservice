@@ -1,4 +1,4 @@
-package com.sample.company.employeeservices.routes;
+package com.kpmg.krisdemo.employeeservices.routes;
 
 import org.apache.camel.builder.RouteBuilder;
 import org.springframework.stereotype.Service;
@@ -14,8 +14,8 @@ public class GetEmployeeDetailServiceRouteBuilder extends RouteBuilder {
     private void configureGetEmployeeDetailPaymentRoute() {
         final String getEmployeeDetailProcessor = "getEmployeeDetailProcessor";
 
-        from("cxf:bean:cXFGetEmployeeDetailHttp")
-                .id("httpGetEmployeeDetailRoute")
+        from("cxf:bean:cxfGetEmployeeDetailBean")
+                .id("getEmployeeDetailRoute")
                 .to(getEmployeeDetailProcessor)
         ;
 

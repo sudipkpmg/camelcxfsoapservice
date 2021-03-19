@@ -1,4 +1,4 @@
-package com.sample.company.employeeservices.interceptor;
+package com.kpmg.krisdemo.employeeservices.interceptor;
 
 import org.apache.camel.Exchange;
 import org.apache.cxf.binding.soap.SoapMessage;

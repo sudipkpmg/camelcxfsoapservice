@@ -277,7 +277,8 @@
 						<id>generate-sources</id>
 						<phase>generate-sources</phase>
 						<configuration>
-							<sourceRoot>${project.build.directory}/generated/cxf</sourceRoot>
+<!--							<sourceRoot>${project.build.directory}/generated/cxf</sourceRoot>-->
+							<sourceRoot>${basedir}/src/main/java</sourceRoot>
 							<wsdlOptions>
 								<wsdlOption>
 									<wsdl>${basedir}/src/main/resources/META-INF/wsdl/EmployeeService/GetEmployeeDetailService/GetEmployeeDetail.wsdl</wsdl>

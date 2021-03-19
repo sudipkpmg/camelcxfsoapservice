@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
-  xmlns:tns="http://com/sample/company/employeeservice/getemployeedetailservice/GetEmployeeDetail/"
+  xmlns:tns="http://com/kpmg/krisdemo/employeeservice/getemployeedetailservice/GetEmployeeDetail/"
   xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
   name="GetEmployeeDetail"
-  targetNamespace="http://com/sample/company/employeeservice/getemployeedetailservice/GetEmployeeDetail/"
-  xmlns:xsd1="http://com/sample/company/employeeservice/getemployeedetailservice/GetEmployeeDetailRequest"
-  xmlns:xsd2="http://com/sample/company/employeeservice/getemployeedetailservice/GetEmployeeDetailResponse">
+  targetNamespace="http://com/kpmg/krisdemo/employeeservice/getemployeedetailservice/GetEmployeeDetail/"
+  xmlns:xsd1="http://com/kpmg/krisdemo/employeeservice/getemployeedetailservice/GetEmployeeDetailRequest"
+  xmlns:xsd2="http://com/kpmg/krisdemo/employeeservice/getemployeedetailservice/GetEmployeeDetailResponse">
   <wsdl:types>
     <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-      targetNamespace="http://com/sample/company/employeeservice/getemployeedetailservice/GetEmployeeDetail/">
+      targetNamespace="http://com/kpmg/krisdemo/employeeservice/getemployeedetailservice/GetEmployeeDetail/">
       <xsd:element name="getEmployeeDetailRequest">
         <xsd:complexType>
           <xsd:sequence>
@@ -26,11 +26,11 @@
     </xsd:schema>
     <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <xsd:import
-        namespace="http://com/sample/company/employeeservice/getemployeedetailservice/GetEmployeeDetailRequest"
+        namespace="http://com/kpmg/krisdemo/employeeservice/getemployeedetailservice/GetEmployeeDetailRequest"
         schemaLocation="GetEmployeeDetailRequest.xsd">
       </xsd:import>
       <xsd:import
-        namespace="http://com/sample/company/employeeservice/getemployeedetailservice/GetEmployeeDetailResponse"
+        namespace="http://com/kpmg/krisdemo/employeeservice/getemployeedetailservice/GetEmployeeDetailResponse"
         schemaLocation="GetEmployeeDetailResponse.xsd">
       </xsd:import>
     </xsd:schema>
@@ -52,7 +52,7 @@
       transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="getEmployeeDetail">
       <soap:operation
-        soapAction="http://com/sample/company/employeeservice/getemployeedetailservice/GetEmployeeDetail/getEmployeeDetail" />
+        soapAction="http://com/kpmg/krisdemo/employeeservice/getemployeedetailservice/GetEmployeeDetail/getEmployeeDetail" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

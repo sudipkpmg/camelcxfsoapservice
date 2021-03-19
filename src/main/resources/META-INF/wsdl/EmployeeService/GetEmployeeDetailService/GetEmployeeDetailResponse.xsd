@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema"
-	xmlns:tns="http://com/sample/company/employeeservice/getemployeedetailservice/GetEmployeeDetailResponse"
-	targetNamespace="http://com/sample/company/employeeservice/getemployeedetailservice/GetEmployeeDetailResponse"
+	xmlns:tns="http://com/kpmg/krisdemo/employeeservice/getemployeedetailservice/GetEmployeeDetailResponse"
+	targetNamespace="http://com/kpmg/krisdemo/employeeservice/getemployeedetailservice/GetEmployeeDetailResponse"
 	elementFormDefault="unqualified">
 
 	<element name="GetEmployeeDetailResponse" type="tns:GetEmployeeDetailResponse" />

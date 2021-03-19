@@ -1,4 +1,4 @@
-package com.sample.company.employeeservices.interceptor;
+package com.kpmg.krisdemo.employeeservices.interceptor;
 
 import org.apache.camel.component.cxf.DefaultCxfBinding;
 import org.apache.cxf.message.Exchange;

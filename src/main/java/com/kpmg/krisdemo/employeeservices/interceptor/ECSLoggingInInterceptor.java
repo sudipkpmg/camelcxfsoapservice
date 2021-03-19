@@ -1,6 +1,6 @@
-package com.sample.company.employeeservices.interceptor;
+package com.kpmg.krisdemo.employeeservices.interceptor;
 
-import org.apache.cxf.ext.logging.LoggingOutInterceptor;
+import org.apache.cxf.ext.logging.LoggingInInterceptor;
 import org.apache.cxf.ext.logging.slf4j.Slf4jVerboseEventSender;
 import org.apache.cxf.interceptor.Fault;
 import org.apache.cxf.message.Message;
@@ -9,10 +9,10 @@ import org.springframework.stereotype.Service;
 
 
 /**
- * The Class ECSLoggingOutInterceptor.
+ * The Class ECSLoggingInInterceptor.
  */
-@Service("ecsLoggingOutInterceptor")
-public class ECSLoggingOutInterceptor extends LoggingOutInterceptor {
+@Service("ecsLoggingInInterceptor")
+public class ECSLoggingInInterceptor extends LoggingInInterceptor {
 
     /** The xml logging enabled. */
     @Value("${cxf.logging.enabled}")
@@ -21,17 +21,16 @@ public class ECSLoggingOutInterceptor extends LoggingOutInterceptor {
     /**
      * Constructor ECSLoggingInInterceptor.
      */
-    public ECSLoggingOutInterceptor() {
+    public ECSLoggingInInterceptor() {
         super(new Slf4jVerboseEventSender());
     }
 
     /**
-     * Handles writing the message to log file. Response content will be logged
+     * Handles writing the message to log file. Request content will be logged
      * only if its enabled
      * 
-     * @param message
-     *            message object
-     *  @throws Fault message
+     * @param message message object
+     * @throws Fault message
      */
     @Override
     public void handleMessage(Message message) throws Fault {
